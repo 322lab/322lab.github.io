@@ -98,6 +98,7 @@
   .nowrap{ white-space:nowrap; }
   .nowrap-lg{ white-space:nowrap; }
   @media (max-width:480px){ .nowrap-lg{ white-space:normal; } }
+  @media (max-width:560px){ .brand .lab{ display:none; } .nav-cta{ font-size:12px; padding:8px 12px; white-space:nowrap; } }
 
   .sub{
     font-size:17px; color:var(--text-dim); max-width:520px; margin-bottom:36px;
@@ -280,7 +281,7 @@
   .defaults-table tr:last-child td{ border-bottom:none; }
   .defaults-table td:first-child{ font-weight:600; color:var(--text); white-space:nowrap; }
   .defaults-table td:nth-child(2){ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--mode-accent); white-space:nowrap; transition:color .4s; }
-  .table-note{ font-size:12.5px; color:var(--text-faint); }
+  .table-note{ font-size:14px; color:var(--text-faint); }
 
   /* flavor */
   .flavor-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--panel-line); border:1px solid var(--panel-line); border-radius:8px; overflow:hidden; margin-bottom:16px; }
@@ -298,7 +299,7 @@
   .price-list{ font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--text-faint); text-decoration:line-through; }
   .price-now{ font-family:'Space Grotesk',sans-serif; font-size:54px; font-weight:700; color:var(--mode-accent); transition:color .4s; }
   .price-then{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--text-dim); margin-bottom:24px; }
-  .price-list-note{ font-size:13px; color:var(--text-faint); max-width:340px; }
+  .price-list-note{ font-size:14px; color:var(--text-faint); max-width:340px; }
   .cta{
     display:inline-flex; align-items:center; gap:10px; justify-self:end;
     background:var(--mode-accent); color:#241811; font-family:'IBM Plex Mono',monospace;
@@ -546,7 +547,7 @@
       <p>Voice Base was built to assist singers, editors, and podcasters, shaped by their real, honest feedback about what they actually needed.</p>
       <p>Thank you to the people who supported me through a hard stretch, and to the cats who stayed by my side while I built this.</p>
       <p>I hope this plugin can be a little bit of strength for your work.</p>
-      <p>A portion of every sale goes to children's charities and animal rescue organizations.<span class="note-flag">org name here</span></p>
+      <p>A portion of every sale goes to children's charities and animal rescue organizations. We'll report each donation and its recipient on this page.</p>
     </div>
   </div>
 </section>
