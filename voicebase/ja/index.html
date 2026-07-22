@@ -296,8 +296,9 @@
     background:var(--panel); border:1px solid var(--panel-line); border-radius:8px;
     padding:40px 44px;
   }
-  .price-head{ display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:26px; }
-  .price-notes{ display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; }
+  .price-head{ display:flex; justify-content:flex-start; align-items:center; gap:28px; flex-wrap:wrap; margin-bottom:28px; }
+  .price-notes{ display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; }
+  .price-col{ display:flex; flex-direction:column; gap:12px; }
   .price-tag{ display:flex; align-items:baseline; gap:14px; }
   .price-list{ font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--text-faint); text-decoration:line-through; }
   .price-now{ font-family:'Space Grotesk',sans-serif; font-size:54px; font-weight:700; color:var(--mode-accent); transition:color .4s; }
@@ -544,10 +545,14 @@
         <a class="cta" href="https://buy.polar.sh/polar_cl_3n2lZQ1MRCHmNFTnaTywJxij8qGGunVlR5qYC3lFsTS">購入する →</a>
       </div>
       <div class="price-notes">
-        <div class="price-list-note"><b>$39 は発売を記念した特別価格です。</b>通常価格は $49。終了時期は未定ですが、予告なく通常価格に戻ることがあります。</div>
-        <div class="price-list-note"><b>動作環境:</b> macOS 10.13（High Sierra）以降 / Apple Silicon・Intel 両対応（Universal）。フォーマットは <b>AU + VST3</b>。Logic Pro・GarageBand・Final Cut Pro など AU / VST3 対応ホストで動作します。<b>Pro Tools（AAX）には対応していません。</b></div>
-        <div class="price-list-note">買い切り。認証は基本1回だけ。ネット接続時に軽い確認を行うことがありますが、オフラインでもそのまま使えます。</div>
-        <div class="price-list-note">全機能そのままの7日間無料トライアルつき。1ライセンスで2台まで使えます。</div>
+        <div class="price-col">
+          <div class="price-list-note"><b>$39 は発売を記念した特別価格です。</b>通常価格は $49。終了時期は未定ですが、予告なく通常価格に戻ることがあります。</div>
+          <div class="price-list-note">買い切り。認証は基本1回だけ。ネット接続時に軽い確認を行うことがありますが、オフラインでもそのまま使えます。</div>
+        </div>
+        <div class="price-col">
+          <div class="price-list-note"><b>動作環境:</b> macOS 10.13（High Sierra）以降 / Apple Silicon・Intel 両対応（Universal）。フォーマットは <b>AU + VST3</b>。Logic Pro・GarageBand・Final Cut Pro など AU / VST3 対応ホストで動作します。<b>Pro Tools（AAX）には対応していません。</b></div>
+          <div class="price-list-note">全機能そのままの7日間無料トライアルつき。1ライセンスで2台まで使えます。</div>
+        </div>
       </div>
     </div>
     <p class="table-note">合わなければ、購入後14日以内は理由を問わず返金します。</p>

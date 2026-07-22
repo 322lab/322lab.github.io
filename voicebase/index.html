@@ -296,8 +296,9 @@
     background:var(--panel); border:1px solid var(--panel-line); border-radius:8px;
     padding:40px 44px;
   }
-  .price-head{ display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:26px; }
-  .price-notes{ display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; }
+  .price-head{ display:flex; justify-content:flex-start; align-items:center; gap:28px; flex-wrap:wrap; margin-bottom:28px; }
+  .price-notes{ display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; }
+  .price-col{ display:flex; flex-direction:column; gap:12px; }
   .price-tag{ display:flex; align-items:baseline; gap:14px; }
   .price-list{ font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--text-faint); text-decoration:line-through; }
   .price-now{ font-family:'Space Grotesk',sans-serif; font-size:54px; font-weight:700; color:var(--mode-accent); transition:color .4s; }
@@ -544,10 +545,14 @@
         <a class="cta" href="https://buy.polar.sh/polar_cl_3n2lZQ1MRCHmNFTnaTywJxij8qGGunVlR5qYC3lFsTS">Buy now →</a>
       </div>
       <div class="price-notes">
-        <div class="price-list-note"><b>$39 is an introductory launch price.</b> The regular price is $49 — no fixed end date, and it may return to the regular price without notice.</div>
-        <div class="price-list-note"><b>Requirements:</b> macOS 10.13 (High Sierra) or later / Apple Silicon &amp; Intel (Universal). Formats: <b>AU + VST3</b>. Runs in AU / VST3 hosts such as Logic Pro, GarageBand, and Final Cut Pro. <b>Pro Tools (AAX) is not supported.</b></div>
-        <div class="price-list-note">One-time purchase. Activate once; the plugin may check in lightly while you're online, and keeps working offline.</div>
-        <div class="price-list-note">7-day free trial with every feature included. One license covers 2 of your machines.</div>
+        <div class="price-col">
+          <div class="price-list-note"><b>$39 is an introductory launch price.</b> The regular price is $49 — no fixed end date, and it may return to the regular price without notice.</div>
+          <div class="price-list-note">One-time purchase. Activate once; the plugin may check in lightly while you're online, and keeps working offline.</div>
+        </div>
+        <div class="price-col">
+          <div class="price-list-note"><b>Requirements:</b> macOS 10.13 (High Sierra) or later / Apple Silicon &amp; Intel (Universal). Formats: <b>AU + VST3</b>. Runs in AU / VST3 hosts such as Logic Pro, GarageBand, and Final Cut Pro. <b>Pro Tools (AAX) is not supported.</b></div>
+          <div class="price-list-note">7-day free trial with every feature included. One license covers 2 of your machines.</div>
+        </div>
       </div>
     </div>
     <p class="table-note">Not the right fit? Refunds within 14 days of purchase — no questions asked.</p>
