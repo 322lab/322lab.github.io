@@ -294,13 +294,15 @@
   /* pricing */
   .price-card{
     background:var(--panel); border:1px solid var(--panel-line); border-radius:8px;
-    padding:48px; display:grid; grid-template-columns:1fr auto; gap:40px; align-items:center;
+    padding:40px 44px;
   }
-  .price-tag{ display:flex; align-items:baseline; gap:14px; margin-bottom:10px; }
+  .price-head{ display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:26px; }
+  .price-notes{ display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; }
+  .price-tag{ display:flex; align-items:baseline; gap:14px; }
   .price-list{ font-family:'IBM Plex Mono',monospace; font-size:18px; color:var(--text-faint); text-decoration:line-through; }
   .price-now{ font-family:'Space Grotesk',sans-serif; font-size:54px; font-weight:700; color:var(--mode-accent); transition:color .4s; }
   .price-then{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--text-dim); margin-bottom:24px; }
-  .price-list-note{ font-size:14px; color:var(--text-faint); max-width:340px; }
+  .price-list-note{ font-size:14px; color:var(--text-faint); }
   .cta{
     display:inline-flex; align-items:center; gap:10px; justify-self:end;
     background:var(--mode-accent); color:#241811; font-family:'IBM Plex Mono',monospace;
@@ -308,7 +310,7 @@
     text-decoration:none; white-space:nowrap; transition:transform .2s, background .4s;
   }
   .cta:hover{ transform:translateY(-2px); }
-  @media (max-width:640px){ .price-card{ grid-template-columns:1fr; } .cta{ justify-self:start; } }
+  @media (max-width:640px){ .price-notes{ grid-template-columns:1fr; } .cta{ justify-self:start; } }
 
   /* footer */
   footer{ padding:48px 0 64px; }
@@ -534,17 +536,19 @@
       <p>No subscription, no recurring license. Buy once, use it on every project after.</p>
     </div>
     <div class="price-card">
-      <div>
+      <div class="price-head">
         <div class="price-tag">
           <span class="price-list">$49</span>
           <span class="price-now">$39</span>
         </div>
+        <a class="cta" href="https://buy.polar.sh/polar_cl_3n2lZQ1MRCHmNFTnaTywJxij8qGGunVlR5qYC3lFsTS">Buy now →</a>
+      </div>
+      <div class="price-notes">
         <div class="price-list-note"><b>$39 is an introductory launch price.</b> The regular price is $49 — no fixed end date, and it may return to the regular price without notice.</div>
         <div class="price-list-note"><b>Requirements:</b> macOS 10.13 (High Sierra) or later / Apple Silicon &amp; Intel (Universal). Formats: <b>AU + VST3</b>. Runs in AU / VST3 hosts such as Logic Pro, GarageBand, and Final Cut Pro. <b>Pro Tools (AAX) is not supported.</b></div>
         <div class="price-list-note">One-time purchase. Activate once; the plugin may check in lightly while you're online, and keeps working offline.</div>
         <div class="price-list-note">7-day free trial with every feature included. One license covers 2 of your machines.</div>
       </div>
-      <a class="cta" href="https://buy.polar.sh/polar_cl_3n2lZQ1MRCHmNFTnaTywJxij8qGGunVlR5qYC3lFsTS">Buy now →</a>
     </div>
     <p class="table-note">Not the right fit? Refunds within 14 days of purchase — no questions asked.</p>
     <p class="table-note">A portion of every sale goes to organizations that care for children and animals. We'll name each recipient here as we donate.</p>
