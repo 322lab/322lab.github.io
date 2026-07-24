@@ -78,6 +78,10 @@
     text-decoration:none; color:var(--text); transition:border-color .25s, color .25s;
   }
   .nav-cta:hover{ border-color:var(--mode-accent); color:var(--mode-accent); }
+  .nav-actions{ display:flex; align-items:center; gap:14px; }
+  .nav-trial{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--text-faint); text-decoration:none; white-space:nowrap; transition:color .25s; }
+  .nav-trial:hover{ color:var(--mode-accent); }
+  .nav-cta s{ color:var(--text-faint); }
 
   /* ---------- HERO ---------- */
   header.hero{ padding:88px 0 56px; position:relative; overflow:hidden; }
@@ -98,7 +102,7 @@
   .nowrap{ white-space:nowrap; }
   .nowrap-lg{ white-space:nowrap; }
   @media (max-width:480px){ .nowrap-lg{ white-space:normal; } }
-  @media (max-width:560px){ .brand .lab{ display:none; } .nav-cta{ font-size:12px; padding:8px 12px; white-space:nowrap; } }
+  @media (max-width:560px){ .brand .lab{ display:none; } nav .wrap{ padding:0 18px; } .nav-cta{ font-size:11.5px; padding:7px 10px; white-space:nowrap; } .nav-actions{ gap:9px; } .nav-trial{ font-size:11px; } }
 
   .sub{
     font-size:17px; color:var(--text-dim); max-width:520px; margin-bottom:36px;
@@ -335,7 +339,7 @@
 <nav>
   <div class="wrap">
     <div class="brand"><span class="dot"></span>322lab. <span class="lab">Voice Base</span></div>
-    <a href="../" style="color:var(--text-faint); font-size:13px; text-decoration:none; margin-right:14px;">English</a><a class="nav-cta" href="#price">購入する — $39</a>
+    <div class="nav-actions"><a href="../" style="color:var(--text-faint); font-size:13px; text-decoration:none;">English</a><a class="nav-trial" href="https://buy.polar.sh/polar_cl_iD6J6XlJNh3zSEWQzkGXQxz5gfYCSj5wSeYyo4QUgJD">無料で試す</a><a class="nav-cta" href="#price">購入 — <s>$49</s> $39</a></div>
   </div>
 </nav>
 
